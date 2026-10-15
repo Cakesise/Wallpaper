@@ -20,14 +20,14 @@ $promptText = @'
 integrated_multimodal_description:
 [Reference 1] is the only character identity guide. Preserve Roland as the same fictional adult age 22: delicate oval face, dark almond eyes, short layered black hair, and the distinctive pale silver-white hair streaks only at the nape.
 [Reference 2], when supplied, is a second identity guide showing Roland's exact short layered haircut, slim proportions, and pale silver-white nape streaks. Never borrow clothing from this identity guide.
-[Reference 3] is the strict costume, pose, staging, camera, and environment guide. Replace its person with Roland while keeping every garment layer, color, bow, accessory, hosiery, shoe, pose, furniture, lighting, and right-side placement faithful to Reference 3.
+[Reference 3] is the strict costume, pose, staging, camera, and environment guide. Its head region was deliberately blanked to remove the old identity. You must completely fill that blank region with Roland's natural head, face, ears, neck, short hair, and silver-white nape streaks from Reference 1. Replace its person with Roland while keeping every garment layer, color, bow, accessory, hosiery, shoe, pose, furniture, lighting, and right-side placement faithful to Reference 3.
 [Shot 1] A locked-off 16:9 desktop-wallpaper composition. Roland remains full-body on the right, leaving generous clean dark negative space on the left for desktop icons. She makes only subtle natural motions: breathing, one blink, a tiny shift of gaze, slight hair and fabric movement. Camera must not pan, zoom, crop, or cut.
 overall_soundscape:
 Very quiet indoor room tone with faint fabric rustle. No speech.
 non_diegetic_music:
 None.
 constraints:
-One adult only. Exact identity and short black haircut with conspicuous silver-white nape streaks from References 1 and 2. Exact outfit and pose from Reference 3. Do not give her long hair or blunt bangs. No duplicate person, no split screen, no collage, no mosaic, no pixel squares, no costume redesign, no text, no logo, no watermark, no camera movement.
+One adult only. Exact identity and short black haircut with conspicuous silver-white nape streaks from the identity references. Exact outfit and pose from Reference 3. The final frame must contain a complete, naturally integrated head and neck; never leave a black void over the head. Reference images are conditioning only and must never appear as a character sheet, inset picture, poster, screen, wallpaper, collage, or miniature person. Do not give her long hair or blunt bangs. No duplicate person, no split screen, no mosaic, no pixel squares, no desktop icons, no taskbar, no dock, no screenshot UI, no costume redesign, no text, no logo, no watermark, no camera movement.
 '@
 
 $integrationInputs = @{

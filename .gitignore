@@ -5,7 +5,7 @@ __pycache__/
 *.pyc
 work/
 *.log
-batch-jobs.json
+batch-jobs*.json
 
 # Generated media is added deliberately after visual QC.
 assets/generated/
