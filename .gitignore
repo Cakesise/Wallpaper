@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+node_modules/
+work/
+*.log
+batch-jobs.json
+
+# Generated media is added deliberately after visual QC.
+assets/generated/

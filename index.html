@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080b12">
+  <title>Roland · Wardrobe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="stage" class="stage" aria-live="polite">
+    <div class="backdrop"></div>
+    <img id="still" class="wall-media" alt="">
+    <video id="video" class="wall-media" playsinline preload="metadata"></video>
+    <div id="shade" class="shade"></div>
+    <div class="brand" aria-hidden="true"><span>R</span><small>ROLAND</small></div>
+
+    <section id="dialogue" class="dialogue glass">
+      <p id="dialogueText">衣橱已经准备好了。</p>
+    </section>
+
+    <button id="panelToggle" class="panel-toggle glass" aria-label="打开衣橱">☰</button>
+    <aside id="panel" class="panel glass" aria-label="衣橱控制面板">
+      <header class="panel-head">
+        <div><p class="eyebrow">ROLAND'S WARDROBE</p><h1>今日穿搭</h1></div>
+        <button id="closePanel" class="icon-button" aria-label="收起">×</button>
+      </header>
+
+      <nav id="modeTabs" class="segmented" aria-label="播放模式">
+        <button data-mode="freeze" class="active">定格</button>
+        <button data-mode="single">单次</button>
+        <button data-mode="cycle">轮播</button>
+        <button data-mode="favorites">收藏</button>
+      </nav>
+
+      <div class="current-row">
+        <div><span id="currentIndex">01 / 28</span><strong id="currentName">夜色红底</strong><small id="currentEnglish">A SECRET IN RED</small></div>
+        <button id="favoriteButton" class="favorite" aria-label="收藏当前穿搭">☆</button>
+      </div>
+
+      <div class="actions">
+        <button id="previousButton">← 上一套</button>
+        <button id="randomButton" class="primary">随机一套</button>
+        <button id="nextButton">下一套 →</button>
+      </div>
+
+      <div id="wardrobeTabs" class="wardrobe-tabs">
+        <button data-group="standing" class="active">立姿</button>
+        <button data-group="sitting">坐姿</button>
+        <button data-group="reclining">倚卧</button>
+      </div>
+      <div id="lookGrid" class="look-grid"></div>
+
+      <details class="settings">
+        <summary>显示与播放设置</summary>
+        <label>画面明暗 <output id="brightnessValue">100%</output><input id="brightness" type="range" min="65" max="115" value="100"></label>
+        <label>声音大小 <output id="volumeValue">35%</output><input id="volume" type="range" min="0" max="100" value="35"></label>
+        <label class="switch-row"><span>开启声音</span><input id="sound" type="checkbox"></label>
+        <label class="switch-row"><span>15 秒后自动收起</span><input id="autohide" type="checkbox" checked></label>
+        <label>画面比例<select id="fit"><option value="contain">完整画面</option><option value="cover">铺满屏幕</option></select></label>
+        <label>自动换装<select id="autoswitch"><option value="0">等我来选</option><option value="5">每 5 分钟</option><option value="15">每 15 分钟</option><option value="30">每 30 分钟</option></select></label>
+        <label>文字大小<select id="textsize"><option value="small">小</option><option value="medium" selected>中</option><option value="large">大</option></select></label>
+        <label>面板位置<select id="layout"><option value="left" selected>左侧</option><option value="right">右侧</option></select></label>
+      </details>
+    </aside>
+    <div id="toast" class="toast" role="status"></div>
+  </main>
+  <script src="catalog.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+

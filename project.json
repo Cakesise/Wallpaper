@@ -1,0 +1,27 @@
+{
+  "contentrating": "Everyone",
+  "description": "Interactive web wallpaper featuring the original fictional adult character Roland. Locally generated media.",
+  "file": "index.html",
+  "general": {
+    "properties": {
+      "look": { "index": 0, "order": 100, "text": "初始穿搭", "type": "combo", "value": "04", "options": [
+        {"label":"记住上次选择","value":"0"},{"label":"夜色红底","value":"01"},{"label":"奶油假日","value":"02"},{"label":"绯红小恶魔","value":"03"},{"label":"蓝结心事","value":"04"},{"label":"黑衫偷闲","value":"05"},{"label":"酒红赴约","value":"06"},{"label":"雾灰银光","value":"07"},{"label":"开衫午后","value":"08"},{"label":"薄纱晚风","value":"09"},{"label":"夜幕丝绒","value":"sit-01"}
+      ]},
+      "sound": {"index":1,"order":101,"text":"开启声音","type":"bool","value":false},
+      "volume": {"index":2,"order":102,"text":"声音大小","type":"slider","min":0,"max":100,"step":1,"value":35},
+      "brightness": {"index":3,"order":103,"text":"画面明暗","type":"slider","min":65,"max":115,"step":1,"value":100},
+      "autohide": {"index":4,"order":104,"text":"15 秒后自动收起界面","type":"bool","value":true},
+      "fit": {"index":5,"order":105,"text":"画面比例","type":"combo","value":"contain","options":[{"label":"完整画面","value":"contain"},{"label":"铺满屏幕","value":"cover"}]},
+      "autoswitch": {"index":6,"order":106,"text":"自动换装间隔","type":"combo","value":"0","options":[{"label":"等我来选","value":"0"},{"label":"每 5 分钟","value":"5"},{"label":"每 15 分钟","value":"15"},{"label":"每 30 分钟","value":"30"}]},
+      "schemecolor": {"order":0,"text":"ui_browse_properties_scheme_color","type":"color","value":"0 0 0"}
+    }
+  },
+  "preview": "preview.jpg",
+  "ratingsex": "none",
+  "ratingviolence": "none",
+  "tags": ["Anime", "Interactive"],
+  "title": "Roland · Interactive Wardrobe",
+  "type": "Web",
+  "version": 1,
+  "visibility": "public"
+}
