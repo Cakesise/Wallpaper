@@ -5,7 +5,7 @@
   "general": {
     "properties": {
       "look": { "index": 0, "order": 100, "text": "初始穿搭", "type": "combo", "value": "04", "options": [
-        {"label":"记住上次选择","value":"0"},{"label":"夜色红底","value":"01"},{"label":"奶油假日","value":"02"},{"label":"绯红小恶魔","value":"03"},{"label":"蓝结心事","value":"04"},{"label":"黑衫偷闲","value":"05"},{"label":"酒红赴约","value":"06"},{"label":"雾灰银光","value":"07"},{"label":"开衫午后","value":"08"},{"label":"薄纱晚风","value":"09"},{"label":"夜幕丝绒","value":"sit-01"}
+        {"label":"记住上次选择","value":"0"},{"label":"夜色红底","value":"01"},{"label":"奶油假日","value":"02"},{"label":"绯红小恶魔","value":"03"},{"label":"蓝结心事","value":"04"},{"label":"黑衫偷闲","value":"05"},{"label":"酒红赴约","value":"06"},{"label":"雾灰银光","value":"07"},{"label":"开衫午后","value":"08"},{"label":"薄纱晚风","value":"09"},{"label":"暮蓝潮汐","value":"classic-20"},{"label":"晴海微风","value":"classic-24"},{"label":"夜幕丝绒","value":"sit-01"},{"label":"黑衫轻语","value":"sit-02"},{"label":"白衫偷懒","value":"sit-04"},{"label":"墨格从容","value":"sit-05"},{"label":"绯色来信","value":"sit-06"},{"label":"粉结初晴","value":"sit-07"},{"label":"雾灰轻暖","value":"sit-12"},{"label":"簪花小令","value":"sit-13"},{"label":"黑裙侧影","value":"sit-14"},{"label":"青灰浮光","value":"sit-16"},{"label":"紫暮长靴","value":"recline-01"},{"label":"暖织冬日","value":"recline-02"},{"label":"晴蓝百褶","value":"recline-03"},{"label":"墨色慵懒","value":"recline-04"},{"label":"奶霜花边","value":"recline-05"},{"label":"灰格书卷","value":"recline-06"},{"label":"豹纹不羁","value":"recline-07"}
       ]},
       "sound": {"index":1,"order":101,"text":"开启声音","type":"bool","value":false},
       "volume": {"index":2,"order":102,"text":"声音大小","type":"slider","min":0,"max":100,"step":1,"value":35},
