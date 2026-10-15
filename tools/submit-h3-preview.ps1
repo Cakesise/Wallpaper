@@ -9,6 +9,7 @@ param(
     [int]$DurationSeconds = 2,
     [double]$Megapixels = 0.2,
     [string]$FilenamePrefix = '',
+    [string]$ExtraConstraint = '',
     [ValidateSet('video/h264-mp4','video/webm')]
     [string]$OutputFormat = 'video/h264-mp4'
 )
@@ -29,6 +30,9 @@ None.
 constraints:
 One adult only. Exact identity and short black haircut with conspicuous silver-white nape streaks from the identity references. Exact outfit and pose from Reference 3. The final frame must contain a complete, naturally integrated head and neck; never leave a black void over the head. Reference images are conditioning only and must never appear as a character sheet, inset picture, poster, screen, wallpaper, collage, or miniature person. Do not give her long hair or blunt bangs. No duplicate person, no split screen, no mosaic, no pixel squares, no desktop icons, no taskbar, no dock, no screenshot UI, no costume redesign, no text, no logo, no watermark, no camera movement.
 '@
+if ($ExtraConstraint) {
+    $promptText += "`nlook_specific_constraint:`n$ExtraConstraint"
+}
 
 $integrationInputs = @{
     main_mode = 'all_reference'
